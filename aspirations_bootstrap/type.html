@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang = 'en-US'>
+  <head>
+    <meta charset = "UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href = "https://cdn3.iconfinder.com/data/icons/blue-ulitto/128/Developer_files_Python_Script-512.png"
+    type = "image/gif" sizes = "16x16">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+<!--start of website-->
+  <body class = "container-fluid">
+    <nav class = "navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbar">
+        <span class = "navbar-toggler-icon"></span>
+      </button>
+      <div class = "collapse navbar-collapse" id = "navbar">
+        <ul class = "navbar-nav">
+          <li class = "nav-item">
+            <a class = "nav-link" href = "bootstrap_project.html">
+              <img src = "https://banner2.cleanpng.com/20180412/kye/kisspng-python-programming-language-computer-programming-language-5acfdc3636bac7.8891188615235717662242.jpg"
+              alt = "Logo" style = "width:40px;" class = "rounded-pill">
+            </a>
+          </li>
+          <li class = "nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" href = "#" role = "button" data-bs-toggle = "dropdown">Basics</a>
+            <ul class = "dropdown-menu">
+              <li><a class = "dropdown-item" href = "print.html">Print Function</a></li>
+              <li><a class = "dropdown-item" href = "input.html">Input Function</a></li>
+              <li><a class = "dropdown-item" href = "#">Type Function</a></li>
+              <li><a class = "dropdown-item" href = "forloop.html">For Loop Function</a></li>
+            </ul>
+          </li>
+          <li class = "nav-item">
+            <a class = "nav-link" href = "libraries.html">More Libraries</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 id = "basics">Basics</h1>
+    <h2 id = "type">Type</h2>
+    <div>
+      The <em>type</em> function simply returns the type of an object. Objects
+      can have several different types, and here are some of the most common:<br>
+      <table class = "table table-bordered">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Abbreviation</th>
+            <th>Explanation</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--string-->
+          <tr>
+            <td>String</td>
+            <td>str</td>
+            <td>Can be anything but will not possess any special qualities. For instance,
+            one cannot add '1' and '2' if they are both strings; they must be converted to
+           integers.</td>
+            <td>'Hello World', '1', '0.3'</td>
+          </tr>
+          <!--integer-->
+          <tr>
+            <td>Integer</td>
+            <td>int</td>
+            <td>Any whole number; can be added, multiplied, etc. in equations</td>
+            <td>-5, 0, 100</td>
+          </tr>
+          <!--float-->
+          <tr>
+            <td>Float</td>
+            <td>float</td>
+            <td>Any decimal; possesses the same characteristics as int</td>
+            <td>-6.12, 0.324, 3.1415</td>
+          </tr>
+          <!--list-->
+          <tr>
+            <td>List</td>
+            <td>list</td>
+            <td>A group of objects contained in square brackets and separated by commas</td>
+            <td>['Hello', 9, 0.1, True]</td>
+          </tr>
+          <!--dictionary-->
+          <tr>
+            <td>Dictionary</td>
+            <td>dict</td>
+            <td>Similar to a list but organizes elements in key:value pairs; also uses curly brackets.</td>
+            <td>{'First':'Bob', 'Last':'Smith', 'Age':35}</td>
+          </tr>
+        </tbody>
+      </table>
+      You can simply find the type of an object by using type():
+      <div class = "row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Input: <br>print(type('Hello'))
+          </code>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            <!--have to use different notation because <class 'str'> will interpreted as a tag in HTML-->
+            #Output: <br>&lt;class 'str'&gt;
+          </code>
+        </div>
+      </div>
+      Or:
+      <div class = "row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Input: <br>print(type(90))
+          </code>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Output: <br>&lt;class 'int'&gt;
+          </code>
+        </div>
+      </div>
+      Or:
+      <div class = "row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Input: <br>print(type(99.99))
+          </code>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+          <code>
+            #Output: <br>&lt;class 'float'&gt;
+          </code>
+        </div>
+      </div>
+      <br>
+      <div class = "alert alert-info">
+        <strong>Type functions</strong> are especially helpful when debugging,
+        since your computer often expects one type of variable but recieves another!
+      </div>
+      <div><strong>Section Challenge:</strong><br>
+        Get the user to input a character, and then test the type() function on their input. What do you notice?
+        <iframe src="https://trinket.io/embed/python/be6b2dde0e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <button type = "button" class = "button" data-bs-toggle = "collapse" data-bs-target = "#answer"><strong>Answer:</strong></button>
+      <div id = "answer" class = "collapse">
+        <div class = "row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 bg-light text-danger">
+            <code>
+              user_input = input("Enter a character: ")
+              print(type(user_input))
+            </code>
+          </div>
+        </div>
+        <div class = "alert alert-info">
+          Inputs will <emph>always</emph> appear as strings, and you will have
+          to convert them in order to make them into other types.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
