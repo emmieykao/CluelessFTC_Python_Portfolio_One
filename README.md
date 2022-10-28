@@ -12,4 +12,4 @@ NOTE: graphics.py is the Zelle graphics library, and each program using this lib
 
 4.	aspirations_reader.py: This allows users to “purchase” and read different book files through a Kindle-like platform called swindle.py. The book files are already inside of the folder, so the program reads directly from each file.
 
-5.	aspirations_jupyter_data-science.ipynb: This is an example of a Jupyter notebook with descriptive statistics using the American National Election Studies 2020 Exploratory Testing Survey. I used libraries such as Pandas, MatPlotLib, and Seaborn to create graphs and data frames that convey the relationships between the variables of social media use, misinformation, and faith in experts.
+5.	aspirations_jupyter_data-science.ipynb: This is an example of a Jupyter notebook that I am using for my work in data science with descriptive statistics using the American National Election Studies 2020 Exploratory Testing Survey. I used libraries such as Pandas, MatPlotLib, and Seaborn to create graphs and data frames that convey the relationships between the variables of social media use, misinformation, and faith in experts.
