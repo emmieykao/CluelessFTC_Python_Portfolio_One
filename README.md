@@ -1,6 +1,6 @@
 NOTE: graphics.py is the Zelle graphics library, and each program using this library is in a folder with the file. This is the only file in the repository that I did not code myself. All of the files in the repository are in Python.
 
-1.	aspirations_pong: This is a version of the game Pong, in which one player uses the up and down arrow keys to control their paddle and the other player uses the E and S keys.
+1.	aspirations_pong: This possesses two versions of the game Pong. In `pong.py`,  one player uses the up and down arrow keys to control their paddle and the other player uses the E and S keys. In `pong_game.pyde`, one player uses the W and S keys, and the other uses the O and L keys.
 
 2.	aspirations_python_misc: This is a collection of some miscellaneous programs that I have made:
   a.	connect.py uses the Zelle graphics library to create a shape out of points that the user inputs on a window.
